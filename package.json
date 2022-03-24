@@ -1,4 +1,9 @@
 {
   "name": "scrum-app",
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
 }
