@@ -1,7 +1,10 @@
+import { useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
+  const { loading, error, data } = useQuery();
+
   return (
     <div>
       <h1>Bookkeeper</h1>
