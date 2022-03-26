@@ -1,9 +1,10 @@
-import { useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import './App.css';
+import { useQuery_USERS_IN_ROOM_QUERY } from './hooks/rooms';
 
 function App() {
-  const { loading, error, data } = useQuery();
+  const { data, loading, error } = useQuery_USERS_IN_ROOM_QUERY('fe0b7bf6-e409-425c-b9f0-29869455c712');
+  console.log({ data, loading, error });
 
   return (
     <div>

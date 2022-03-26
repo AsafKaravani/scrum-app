@@ -8,6 +8,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'implicit-arrow-linebreak': 'off',
     'object-curly-newline': 'off',
+    camelcase: 'off',
   },
   settings: {
     'import/resolver': {
