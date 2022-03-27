@@ -1,11 +1,11 @@
+import { BottomNavigation, BottomNavigationAction } from '@mui/material';
+import { LocationOn, Restore, Home } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import './App.css';
-import { useQuery_USERS_IN_ROOM_QUERY } from './hooks/rooms';
+import { useState } from 'react';
 
 function App() {
-  const { data, loading, error } = useQuery_USERS_IN_ROOM_QUERY('fe0b7bf6-e409-425c-b9f0-29869455c712');
-  console.log({ data, loading, error });
-
+  const [value, setValue] = useState();
   return (
     <div>
       <h1>Bookkeeper</h1>
@@ -17,6 +17,17 @@ function App() {
       >
         <Link to="/invoices">Invoices</Link> | <Link to="/expenses">Expenses</Link>
       </nav>
+      <BottomNavigation
+        showLabels
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      >
+        <BottomNavigationAction label="Recents" icon={<Home />} />
+        <BottomNavigationAction label="Favorites" icon={<Restore />} />
+        <BottomNavigationAction label="Nearby" icon={<LocationOn />} />
+      </BottomNavigation>
     </div>
   );
 }
