@@ -4,6 +4,7 @@ import { ApolloProvider } from '@apollo/client';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Layout } from './features/layout/layout';
 import { client } from './services/apollo-client';
+import { HomePage } from './pages/home-page';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route path="/" element={<> home page </>} />
+            <Route path="/" element={<HomePage />} />
           </Route>
         </Routes>
       </BrowserRouter>
