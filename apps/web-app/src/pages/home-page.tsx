@@ -4,6 +4,20 @@ export function HomePage() {
   return (
     <div>
       <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
+      <RoomCreationForm />
     </div>
   );
 }
