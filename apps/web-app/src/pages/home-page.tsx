@@ -1,23 +1,12 @@
+import { Paper } from '@mui/material';
 import { RoomCreationForm } from '../features/rooms/room-creation-form';
 
 export function HomePage() {
   return (
     <div>
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
-      <RoomCreationForm />
+      <Paper style={{ padding: 20, margin: 20 }} variant="outlined">
+        <RoomCreationForm />
+      </Paper>
     </div>
   );
 }

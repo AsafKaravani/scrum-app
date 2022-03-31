@@ -10,7 +10,7 @@ export function Layout() {
       <div style={{ position: 'fixed', top: 0, width: '100%', left: 0, zIndex: 9999 }}>
         <Header />
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column', minHeight: height, background: 'red' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: height }}>
         {/** This header is used as padding to make sure
          * the acctual header is not shadowing anything */}
         <div style={{ opacity: 0 }}>
