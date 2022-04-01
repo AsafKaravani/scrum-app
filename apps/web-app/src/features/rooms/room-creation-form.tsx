@@ -1,9 +1,6 @@
 import { Button, FormControl, OutlinedInput } from '@mui/material';
-import { useState } from 'react';
 
 export function RoomCreationForm() {
-  const [formValues, setFormValues] = useState();
-
   return (
     <>
       <FormControl style={{ width: '100%' }}>
@@ -16,8 +13,9 @@ export function RoomCreationForm() {
           type="submit"
           style={{ marginTop: 20, borderRadius: 10 }}
           size="large"
+          startIcon={<i className="fa fa-screen-users" />}
         >
-          Open Room
+          <b>Open Room</b>
         </Button>
       </div>
     </>

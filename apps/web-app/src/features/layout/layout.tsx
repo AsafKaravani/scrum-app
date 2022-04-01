@@ -16,7 +16,7 @@ export function Layout() {
         <div style={{ opacity: 0 }}>
           <Header />
         </div>
-        <div style={{ flex: '1', overflowY: 'scroll' }}>
+        <div style={{ flex: '1', overflowY: 'scroll', background: '#FDF6EC' }}>
           <Outlet />
         </div>
         {/** This footer is used as padding to make sure
