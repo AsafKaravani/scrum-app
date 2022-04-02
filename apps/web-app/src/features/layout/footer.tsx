@@ -16,9 +16,15 @@ export function Footer() {
       }}
       style={{ background: theme.palette.primary.main }}
     >
-      <BottomNavigationAction label="Recents" icon={<Restore />} />
-      <BottomNavigationAction label="Favorites" icon={<Favorite />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOn />} />
+      <BottomNavigationAction
+        label="History"
+        icon={<i className="fa-solid fa-clock-rotate-left" style={{ marginBottom: 5 }} />}
+      />
+      <BottomNavigationAction
+        label="Invite"
+        disabled
+        icon={<i className="fa-solid fa-1x fa-user-plus" style={{ marginBottom: 5, left: 2, position: 'relative' }} />}
+      />
     </BottomNavigation>
   );
 }

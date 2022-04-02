@@ -835,8 +835,10 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     react-router-dom: 6
+    recoil: ^0.7.0
     rollup-plugin-visualizer: ^5.6.0
     typescript: ^4.5.4
+    use-detect-keyboard-open: ^0.2.0
     vite: ^2.8.0
   languageName: unknown
   linkType: soft
@@ -2694,6 +2696,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hamt_plus@npm:1.0.2":
+  version: 1.0.2
+  resolution: "hamt_plus@npm:1.0.2"
+  checksum: af26ea32db03009019cc83dfa9411521a2fa16079443de1a502c9be46d8b3c975acda8ed93fc5750ef08d3186d35901e2d8cfe717dd54bea67b358601fa74e4c
+  languageName: node
+  linkType: hard
+
 "has-bigints@npm:^1.0.1":
   version: 1.0.1
   resolution: "has-bigints@npm:1.0.1"
@@ -3859,6 +3868,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"recoil@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "recoil@npm:0.7.0"
+  dependencies:
+    hamt_plus: 1.0.2
+  peerDependencies:
+    react: ">=16.13.1"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: e190db5153e322ba8ca824e97701e756c41681080da23f3e87d104544da2e8c9eea44ada8a36857ef9a1ade368dfe6ea3af7d51796441b08c40272c0a1386c81
+  languageName: node
+  linkType: hard
+
 "regenerator-runtime@npm:^0.13.4":
   version: 0.13.9
   resolution: "regenerator-runtime@npm:0.13.9"
@@ -4474,6 +4499,13 @@ __metadata:
   dependencies:
     punycode: ^2.1.0
   checksum: 7167432de6817fe8e9e0c9684f1d2de2bb688c94388f7569f7dbdb1587c9f4ca2a77962f134ec90be0cc4d004c939ff0d05acc9f34a0db39a3c797dada262633
+  languageName: node
+  linkType: hard
+
+"use-detect-keyboard-open@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "use-detect-keyboard-open@npm:0.2.0"
+  checksum: 41d46717b85d21857901c835598521442de1524dd97451c49d7cf1c389b487fc73e7e7ef1319b6dd83d3b2046b89d3cf59b3610c8a940ad1f960b15cbb912400
   languageName: node
   linkType: hard
 
