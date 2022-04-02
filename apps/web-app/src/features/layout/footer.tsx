@@ -22,7 +22,6 @@ export function Footer() {
       />
       <BottomNavigationAction
         label="Invite"
-        disabled
         icon={<i className="fa-solid fa-1x fa-user-plus" style={{ marginBottom: 5, left: 2, position: 'relative' }} />}
       />
     </BottomNavigation>
