@@ -1,13 +1,18 @@
 import { Button, FormControl, OutlinedInput } from '@mui/material';
-import { useState } from 'react';
+import { useTheme } from '@mui/material/styles';
+import Color from 'color';
+import './room-creation-form.css';
 
+Color('#7743CE').lighten(0.5);
 export function RoomCreationForm() {
-  const [formValues, setFormValues] = useState();
+  const theme = useTheme();
+
+  const primaryColorLighten = Color(theme.palette.primary.main).lightness(95).hex();
 
   return (
-    <>
+    <div className="RoomCreationForm">
       <FormControl style={{ width: '100%' }}>
-        <OutlinedInput placeholder="Enter room name" />
+        <OutlinedInput style={{ background: primaryColorLighten, border: 'none' }} placeholder="Enter room name" />
       </FormControl>
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
         <Button
@@ -16,10 +21,11 @@ export function RoomCreationForm() {
           type="submit"
           style={{ marginTop: 20, borderRadius: 10 }}
           size="large"
+          startIcon={<i className="fa fa-screen-users" />}
         >
-          Open Room
+          <b>Open Room</b>
         </Button>
       </div>
-    </>
+    </div>
   );
 }
