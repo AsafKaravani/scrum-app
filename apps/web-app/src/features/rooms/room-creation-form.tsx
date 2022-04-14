@@ -1,34 +1,23 @@
-import { Button, FormControl, OutlinedInput, TextField } from '@mui/material';
-import { Controller, useForm } from 'react-hook-form';
+import { Button, OutlinedInput } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import Color from 'color';
+import { useState } from 'react';
 import './room-creation-form.css';
 
 Color('#7743CE').lighten(0.5);
 export function RoomCreationForm() {
   const theme = useTheme();
   const primaryColorLighten = Color(theme.palette.primary.main).lightness(95).hex();
-
-  const { getValues, control, handleSubmit } = useForm({
-    defaultValues: {
-      roomName: '',
-    },
-  });
+  const [roomName, setRoomName] = useState(''); 
 
   return (
     <form className="RoomCreationForm">
-      <Controller
-        name="roomName"
-        control={control}
-        render={({ field: { onChange, value } }) => (
-          <OutlinedInput
-            value={value}
-            onChange={onChange}
+      <OutlinedInput
+            value={roomName}
+            onChange={event => setRoomName(event.target.value)}
             style={{ background: primaryColorLighten, border: 'none', width: '100%' }}
             placeholder="Enter room name"
           />
-        )}
-      />
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
         <Button
           variant="contained"
@@ -37,9 +26,7 @@ export function RoomCreationForm() {
           style={{ marginTop: 20, borderRadius: 10 }}
           size="large"
           startIcon={<i className="fa fa-screen-users" />}
-          onClick={handleSubmit(() => {
-            console.log(getValues());
-          })}
+          onClick={() => {}}
         >
           <b>Open Room</b>
         </Button>
