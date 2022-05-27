@@ -10,7 +10,7 @@ export function RoomCreationForm() {
   const theme = useTheme();
   const primaryColorLighten = Color(theme.palette.primary.main).lightness(95).hex();
   const [roomName, setRoomName] = useState('');
-  const naviagte = useNavigate();
+  const navigate = useNavigate();
   const tryToEnterROom = async () => {
     if (!roomName) {
       alert('No room name!');
@@ -28,7 +28,7 @@ export function RoomCreationForm() {
       console.log(res);
     }
 
-    naviagte(`/room?id=${res?.insert_Rooms_one?.id || rooms[0].id}`)
+    navigate(`/room?id=${res?.insert_Rooms_one?.id || rooms[0].id}`)
 
   }
 
