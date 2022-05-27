@@ -8,6 +8,7 @@ import { Layout } from './features/layout/layout';
 import { client } from './services/apollo-client';
 import { HomePage } from './pages/home-page';
 import { theme } from './theme';
+import { RoomPage } from './pages/room-page';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/room" element={<RoomPage />} />
               </Route>
             </Routes>
           </BrowserRouter>

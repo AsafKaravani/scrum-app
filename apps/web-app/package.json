@@ -6,10 +6,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "generate-gql-client": "zeus https://set-louse-29.hasura.app/v1/graphql ./utils/generated --ts --apollo"
+    "zeus": "zeus https://assuring-egret-26.hasura.app/v1/graphql ./utils/generated --ts --apollo"
   },
   "dependencies": {
-    "@apollo/client": "^3.5.10",
+    "@apollo/client": "^3.6.5",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.5.1",

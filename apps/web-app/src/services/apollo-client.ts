@@ -3,9 +3,9 @@ import { getMainDefinition } from '@apollo/client/utilities';
 import { GraphQLWsLink } from '@apollo/client/link/subscriptions';
 import { createClient } from 'graphql-ws';
 
-const GRAPHQL_API_URL = 'set-louse-29.hasura.app/v1/graphql';
+const GRAPHQL_API_URL = 'assuring-egret-26.hasura.app/v1/graphql';
 const GRAPHQL_API_URL_HTTP = `https://${GRAPHQL_API_URL}`;
-const GRAPHQL_API_URL_WS = `ws://${GRAPHQL_API_URL}`;
+const GRAPHQL_API_URL_WS = `wss://${GRAPHQL_API_URL}`;
 
 const httpLink = new HttpLink({
   uri: GRAPHQL_API_URL_HTTP,
